@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #E9ECF4;
+    color: #000;
+    font-family: 'Robot', sans-serif;
+    background-image: linear-gradient(to right top, #a2a7af, #9a9fa8, #9298a0, #8b9099, #838992);
+}
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header"
+                          "main-1 basio main-2 "
+                          "widget-1 basio widget-2 "
+                          "footer footer footer";
+}
+.container > div,
+.container .contenido,
+.container .header, 
+.container .sidebar, 
+.container .footer {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+.container .header {
+    background: #00DC9E;
+    color: white;
+    border-radius: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-area: header;
+   /* grid-column: 1 / 4; */
+}
+.header h1 {
+     font-size: 70px;
+     font-weight: bold;
+}
+.header p {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.container .contenido {
+    background: #55a8fd;
+    color: white;
+    grid-area: main-1;
+     border-radius: 20px;
+    height: 150px;
+    width: 25rem;
+    /* display: flex;
+    align-items: flex-start;
+    flex-direction: column; */
+    /*grid-column: span 2;*/
+}
+
+
+.icono-figuras {
+    width: 17%;   
+}
+.subtitle {
+    font-size: 19px;
+    display: contents;
+}
+
+.container .contenido-2 {
+    background: #55a8fd;
+    color: white;
+    grid-area: main-2;
+    border-radius: 20px;
+    height: 150px;
+    width: 25rem;
+}
+
+.img-precio-descuento {
+    width: 17%;
+}
+
+.container .widget-1, 
+.container .widget-2 {
+        background: #55a8fd;
+        color: white;
+        border-radius: 20px;
+        height: 10rem;
+        /*text-align: center;*/
+}
+.container .widget-1 {
+    grid-area: widget-1;
+}
+.img-promedio-moda-mediana {
+    width: 17%;
+}
+
+.container .widget-2 {
+    grid-area: widget-2;
+}
+.img-financiero {
+    width: 17%;
+}
+
+.container .footer {
+    background: #00DC9E;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: end;
+    grid-area: footer;
+    /*grid-column: 1 / 4;*/
+}
+

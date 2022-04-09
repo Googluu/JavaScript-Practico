@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "header header header"
+                         "main1 main2 main3"
+                         "footer footer footer";
+}
+.header {
+    font-size: 30px;
+    font-weight: bold;
+    height: 5rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-area: header;
+}
